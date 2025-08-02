@@ -1,0 +1,53 @@
+table,
+th,
+td {
+    border: 1px solid Grey;
+    text-align: center;
+    padding: 10px;
+    table-layout: fixed;
+    align-self: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+body {
+    background: grey;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+section {
+    background: white;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 90%;
+    border-radius: 15px;
+}
+
+ul {
+    list-style: none;
+}
+ul li::before{
+    content: "👤";
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid darkgrey;
+}
+form button{
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
