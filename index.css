@@ -44,7 +44,7 @@ form textarea {
     box-sizing: border-box;
     border: 1px solid darkgrey;
 }
-form button{
+form input[type="submit"]{
     background-color: darkcyan;
     color: white;
     border: none;

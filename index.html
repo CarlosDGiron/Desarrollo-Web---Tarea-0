@@ -69,14 +69,14 @@
     </section>
 
     <section>
-        <form action="index.js">
+        <form>
             <input type="text" name="txtNombres" id="txtNombres" placeholder="Ingrese Nombres.">
             <input type="text" name="txtApellidos" id="txtApellidos" placeholder="Ingrese Apellidos.">
             <input type="text" name="txtTelNumber" id="txtTelNumber" placeholder="Ingrese Numero Telefonico.">
             <input type="text" name="txtEMail" id="txtEMail" placeholder="Ingrese Correo Electrónico.">
             <input type="date" name="birthDate" id="birthDate">
             <textarea name="txtMensaje" id="txtMensaje" placeholder="Ingrese el mensaje."></textarea>
-            <button>Enviar</button>
+            <input type="submit" value="Enviar" id="btnEnviar" onclick="mensaje()">
         </form>
     </section>
 
@@ -87,6 +87,24 @@
     </section>
 
     <footer>Aprende a Programar Fácil y Rápido ©</footer>
+<script>
+    function mensaje(){
+        const nombres = document.getElementById("txtNombres").value;
+        const apellidos = document.getElementById("txtApellidos").value;
+        const telefono =document.getElementById("txtTelNumber").value;
+        const correo = document.getElementById("txtEMail").value;
+        const fecha = document.getElementById("birthDate").value;
+        const mensaje = document.getElementById("txtMensaje").value;
+        alert(
+            `Nombres: ${nombres}\n` +
+            `Apellidos: ${apellidos}\n` +
+            `Teléfono: ${telefono}\n` +
+            `Correo: ${correo}\n` +
+            `Fecha: ${fecha}\n` +
+            `Mensaje: ${mensaje}`
+        );
+    }
+</script>
 </body>
 
 </html>
