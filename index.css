@@ -24,7 +24,7 @@ section {
     background: white;
     padding: 15px;
     margin: 15px auto;
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 15px;
 }
 
@@ -50,4 +50,27 @@ form button{
     border: none;
     padding: 10px;
     width: 100%;
+}
+
+footer {    
+    text-align: center;
+    padding: 10px;
+    background: #0074b8;
+    color: white;
+}
+
+.social {
+    margin: 15px auto;
+    max-width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+}
+
+.social i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #3b5998;
+    cursor: pointer;
 }
